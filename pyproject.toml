@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pca-breast-tumor"
+version = "1.0.0"
+description = "PCA on breast tumor data"
+authors = ["Christoph Waffler <christoph.waffler@tum.de>"]
+readme = "README.md"
+packages = [{include = "."}]
+repository = "https://github.com/chrissiwaffler/pca-breast-tumor"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.17.3"
+GEOparse = "^1.2.0"
+pandas = "^2.0.2"
+matplotlib = "^3.7.1"
+ipykernel = "^6.23.2"
+scikit-learn = "^1.2.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.24.0"
+black = {version = "*", extras = ["jupyter"]}
+
+[tool.poetry.scripts]
+custom_build = "jupyter nbconvert --to python pca.ipynb && python pca.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
