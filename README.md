@@ -1,5 +1,12 @@
 # Principal Component Analysis to analyze a breast tumor dataset
 
+## About
+
+This is the codebase for the section VI of my paper, where principal component analysis (PCA) is applied to a breast tumor dataset.
+All graphics and results used can be generated using the `pca.iypnb` notebook.
+
+For more information about PCA and its derivation and application, please refer to my paper (`pca.pdf`)
+
 ## Setup using Poetry
 
 For an easier setup, use [poetry](https://python-poetry.org/docs/) as the dependency management.
